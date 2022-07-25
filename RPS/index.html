@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock PS</title>
+</head>
+<body>
+    <script>
+        const plays = ["Rock", "Paper", "Sissors"];
+        alert("RPS Game Best Out Of 3 !");
+        let win = 0;
+        for(let i = 0; i < 3; i++){
+            let cho = +prompt("Make a Choice 1.Rock   2.Paper   3.Sissor");
+            cho--;
+            let com = Math.floor(Math.random() * 3);
+            if((cho == 0 && com == 2) || (cho == 1 && com == 0) || (cho == 2 && com == 1)){
+                alert(`Round Won ! You Chose: ${plays[cho]}   Computer Chose: ${plays[com]}`);
+                win++;
+            }
+            else if(cho == com){
+                alert(`Round Draw ! You Chose: ${plays[cho]}   Computer Chose: ${plays[com]}`);
+                i--;
+            }
+            else{
+                alert(`Round Lost ! You Chose: ${plays[cho]} Computer : ${plays[com]}`);
+            }
+        }
+        if(win >= 2){
+            alert("YAY !!!   You Won");
+        }
+        else{
+            alert("You  Lost!");
+        }
+    </script>
+</body>
+</html>
