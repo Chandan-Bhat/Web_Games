@@ -1,0 +1,38 @@
+body {
+    font-family: Verdana;
+    color: aliceblue;
+    background: linear-gradient(to right, #264d73, #003333);
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.cont {
+    display: flex;
+    padding: 50px;
+    gap: 10px;
+    min-height: 150px;
+}
+
+p {
+    border: 3px solid white;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.read {  
+    font-size: larger;
+    text-align: center;
+    min-width: 130px;
+    flex-grow: 1;
+}
+
+.hidden-cont {
+    display: none;
+}
+
+.hidden-cont.showing {
+    display: block;
+}
