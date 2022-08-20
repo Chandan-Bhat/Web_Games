@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Robot-Mono" , sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(45deg, cyan, yellow);
+    position: relative;
+}
+
+.entry {
+    top: 25%;
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#inp {
+    width: 40vh;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.19), 0px 3px 3px rgba(0, 0, 0, 0.23);
+    padding: 9px;
+}
+
+#add {
+    width: 45px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.19), 0px 3px 3px rgba(0, 0, 0, 0.23);
+    transition: 200ms;
+}
+
+#add:hover {
+    background-color: rgb(108, 187, 60);
+}
+#add:active {
+    transform: scale(0.8);
+}
+
+#cont {
+    position: absolute;
+    width: 100%;
+    top : 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.task {
+    min-width: 55vh;
+    background: white;
+    height: 6vh;
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.19), 0px 3px 3px rgba(0, 0, 0, 0.23);
+}
+
+.txt {
+    flex: 3;
+    width: 68%;
+    text-decoration: dashed;
+}
+
+.btn {
+    flex: 1;
+    height: 4vh;
+    border: none;
+    border-radius: 10px;
+    transition: 200ms;
+}
+
+#dne:hover {
+    background-color: hsl(240, 99%, 71%);
+}
+
+#del:hover {
+    background-color: red;
+}
+
+#del:active, #dne:active {
+    transform: scale(0.92);
+}
+
+
